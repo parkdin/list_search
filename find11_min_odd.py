@@ -6,10 +6,10 @@ def find_min_odd(data):
     returns: minimum odd number in the list
     """
     min = data[0]
+    odd = 0
     for i in data:
         if i > min:
             min = i
-        odd = 0
         if min % 2 != 0:
             odd = min
     return odd
